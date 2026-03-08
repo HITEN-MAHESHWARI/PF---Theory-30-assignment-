@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a[5];
+    int i; 
+    int Zero = 0, Negative = 0, Positive = 0;
+    
+    printf("Enter number ");
+    for(i = 0; i < 5; i++){
+    scanf("%d", &a[i]);
+    }
+    for(i = 0; i < 5; i++){
+    if(a[i] > 0){
+        Positive++;
+    }
+    else if(a[i] < 0){
+        Negative++;
+    }
+    else{
+        Zero++;
+    }
+    }
+    printf("%d Positive\n", Positive);
+    printf("%d Negative\n", Negative);
+    printf("%d Zero\n", Zero);
+
+    return 0;
+}
