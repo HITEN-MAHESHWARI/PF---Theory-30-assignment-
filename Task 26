@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a[8];
+    int i;
+    
+    printf("Enter 8 integer ");
+    for(i = 1; i < 9; i++){
+        scanf("%d", &a[i]);
+    }
+    printf("Even Number: ");
+    for(i = 1; i < 9; i++ ){
+    if(a[i] % 2 == 0){
+        printf("%d ", a[i]);
+    }
+    }
+    printf("\n");
+    printf("Odd Number: ");
+    for(i = 1; i < 9; i++ ){
+    if(a[i] % 2 == 1){
+        printf("%d ", a[i]);
+    }
+    }
+
+    return 0;
+}
