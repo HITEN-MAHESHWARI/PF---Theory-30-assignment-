@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a1[5];
+    int a2[5];
+    int i;
+    int j;
+    
+    printf("Enter 5 integer values: ");
+    for(i = 0; i < 5; i++){
+        scanf("%d", &a1[i]);
+    }
+    
+    printf("Integer of Array of 1: ");
+    for(i = 0; i < 5; i++){
+    printf("%d ", a1[i]);
+    } 
+    printf("\n");
+    for(j = 0; j < 5; j++){
+        a2[j] = a1[j];
+    }
+     printf("Integer of Array of 2: ");
+    for(j = 0; j < 5; j++){
+    printf("%d ", a2[j]);
+    } 
+    
+    return 0;
+}
