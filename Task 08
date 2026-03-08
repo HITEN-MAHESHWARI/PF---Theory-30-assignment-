@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    int a1[4];
+    int a2[4];
+    int i;
+    int j;
+    int common;
+    
+    printf("Enter the 4 integer of array 1:");
+    for(i = 0; i < 4; i++){
+        scanf("%d", &a1[i]);
+    }
+    printf("Enter the 4 integer of array 2:");
+    for(j = 0; j < 4; j++){
+        scanf("%d", &a2[j]);
+    }
+    for(i = 0; i < 4; i++){
+        for(j = 0; j < 4; j++){
+            if(a1[i] == a2[j]){
+                printf("Common elements are: ");
+            printf("%d ", a1[i]);
+            }
+        }
+    }
+    return 0;
+}
