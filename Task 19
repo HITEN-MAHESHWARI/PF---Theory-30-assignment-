@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a[5] = {2, 5, 3, 6, 1};
+    int i;
+    int find;
+    
+    printf("Enter a searching number: ");
+    scanf("%d", &find);
+    
+    for(i = 0; i < 5; i++){
+        if(a[i] == find){
+            printf("Found at index %d", i);
+        }
+    }
+    
+    return 0;
+}
