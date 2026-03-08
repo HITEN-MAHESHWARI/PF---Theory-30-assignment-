@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a[5];
+    int i;
+    int j;
+    int sum = 6;
+    
+    printf("Enter 5 integer values: ");
+    for(i = 0; i < 5; i++){
+        scanf("%d", &a[i]);
+    }
+    for(i = 0; i < 5; i++){
+        for(j = i + 1; j < 5; j++){
+        if(a[i] + a[j] == sum){
+            printf("(%d, %d) ",a[i], a[j]);
+    }
+    }
+    }
+    return 0;
+}
