@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int a1[4];
+    int a2[4];
+    int i;
+    int j;
+    
+    printf("Enter the 4 integer of array 1: ");
+    for(i = 0; i < 4; i++){
+    scanf("%d", &a1[i]);
+    }
+    printf("Enter the 4 integer of array 2: ");
+    for(j = 0; j < 4; j++){
+    scanf("%d", &a2[j]);
+    }
+    for(i = 0; i < 4; i++){
+    printf("%d ", a1[i]);
+    }
+    for(j = 0; j < 4; j++){
+    printf("%d ", a2[j]);
+    }
+    
+    return 0;
+}
