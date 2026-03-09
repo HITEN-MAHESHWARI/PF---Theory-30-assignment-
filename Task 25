@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a[6];
+    int i;
+    int j;
+    int count = 0;
+    
+    printf("Enter 6 integer: ");
+    for(i = 0; i < 6; i++){
+        scanf("%d", &a[i]);
+    }
+    for(i = 0; i < 6; i++){
+        count = 0;
+        for(j = 0; j < 6; j++){
+            if(a[i]==a[j]){
+                count++;
+                }
+            }
+            if(count == 1){
+            printf("Unique number is %d", a[i]);
+        }
+    }
+
+    return 0;
+}
