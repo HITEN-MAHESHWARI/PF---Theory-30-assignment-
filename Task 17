@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+    int a[7];
+    int i;
+    int position;
+    int value;
+
+    printf("Enter 6 integer: ");
+    for(i = 0; i < 6; i++){
+        scanf("%d", &a[i]);
+    }
+        
+    printf("Enter position to insert: ");
+    scanf("%d", &position);
+
+    printf("Enter value to insert: ");
+    scanf("%d", &value);
+
+    for(i = 6; i >= position; i--)
+        a[i] = a[i - 1];
+        a[position] = value;
+    
+    for(i = 0; i < 6; i++){
+        printf("%d ", a[i]);
+    }
+    return 0;
+}
