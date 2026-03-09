@@ -3,8 +3,6 @@
 int main() {
     int a[6];
     int i;
-    int sum = 0;
-    double avg;
     
     printf("Enter the 6 integer: ");
     for(i = 0; i < 6; i++){
