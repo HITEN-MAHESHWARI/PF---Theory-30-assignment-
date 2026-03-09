@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[5];
+    int i;
+    int sum = 0; 
+    int total = 0;
+    int n = 6;
+    int missing;
+
+    printf("Enter 5 integer: ");
+
+    for(i = 0; i < 5; i++)
+        scanf("%d", &a[i]);
+
+    for(i = 0; i < 5; i++)
+        sum = sum + a[i];
+
+    total = n * (n + 1) / 2;
+    missing = total - sum;
+    printf("Missing number: %d", missing);
+
+    return 0;
+}
