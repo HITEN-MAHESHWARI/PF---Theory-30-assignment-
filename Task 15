@@ -10,9 +10,10 @@ int main() {
     for(i = 0; i < 6; i++){
         scanf("%d", &a[i]);
     }
+    printf("Even index elements are: ");
     for(i = 0; i < 6; i++){
         if(i % 2 ==0){
-        printf("Even index elements are: %d ", a[i]);
+        printf("%d ", a[i]);
         }
     }
     
